@@ -40,7 +40,6 @@ getColors.addEventListener("submit", function(event){
                     
                     </p>
 
-                    hex,rgb,hsl,hsv, name 
                 </div>
     
                 `
@@ -49,34 +48,5 @@ getColors.addEventListener("submit", function(event){
         }
 
     })
-
-
 })
-
-//  x.addEventListener("input", function(e) {
-//     document.getElementById("color-1-value").textContent= this.value;
-//     })
-
-
-//  .addEventListener("input", function(e) {
-//     console.log(this.value);
-//     })
-
-//  .addEventListener("input", function(e) {
-//     return this.value
-//     })
-
-// console.log(seedColor)
-
-
-// let seedColorFromUser = seedColor.addEventListener("input", e => {
-//     // e.preventDefault()
-//    return seedColor.value
-// })
-
-// console.log(seedColorFromUser)
-
-
-
-
 
