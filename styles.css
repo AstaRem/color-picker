@@ -7,13 +7,17 @@ body {
 #color-picker {
     width: 80%;
     height: 550px;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 #choices {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 0 0 1rem;
+}
+
+.input-choice {
+    margin-right: 25px;
 }
 
 .color-individual {
