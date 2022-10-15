@@ -32,7 +32,7 @@ getColors.addEventListener("submit", function(event){
                 htmlString += `
                 <div class="color-individual">
                     <div class="color-visual" style="background-color: ${colorArray[individualColor].hex.value}"></div>
-                    <p class="color-value" id="color-1-value">${colorArray[individualColor].hex.value} <br>
+                    <p class="color-value" id="color-1-value">hex ${colorArray[individualColor].hex.value} <br>
                     ${colorArray[individualColor].rgb.value}<br>
                     ${colorArray[individualColor].hsl.value}<br>
                     ${colorArray[individualColor].hsv.value}<br>

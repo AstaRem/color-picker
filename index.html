@@ -16,39 +16,44 @@
     <div id="color-picker">
         <h1>Color picker</h1>
         <p>Choose a color first, select one of the color schemes and how many colors you want, then click a button "Get color scheme"</p>
-        <div id="choices">
 
         <form id="get-colors">    
             <input type="color" id="seed-color" class="input-choice" required>
+            
+            <div id="color-mode-selection">
+                <label for="color-mode" >Color mode</label>
+                <select name="color-mode" id="color-mode" class="input-choice" required> 
+                    <option value="monochrome" >Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+            </div>
 
-            <label for="color-mode" >Color mode</label>
-            <select name="color-mode" id="color-mode" class="input-choice" required> 
-                <option value="monochrome" >Monochrome</option>
-                <option value=" monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
-
-            <label for="color-count" >Color Count</label>
-            <select name="color-count" id="color-count" class="input-choice" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+            <div id="count-selection">
+                <label for="color-count" >Color Count</label>
+                <select name="color-count" id="color-count" class="input-choice" >
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
 
             <button>Get color scheme</button>
-        </div>
+        
         </form>
+    
+    
         
         <div id="color-scheme">
             <!-- rendered by js -->
         </div>
+        
     </div>
 
     <script src="index.js"></script>
