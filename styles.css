@@ -15,7 +15,7 @@ body {
 #get-colors {
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 2rem;
+    margin: 0 auto 2rem;
     align-items: center;
 
 }
@@ -54,6 +54,9 @@ label {
     text-align: center;
     border: .5px solid rgb(45, 45, 45);
     margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 #color-scheme {
     display: flex;
@@ -70,12 +73,23 @@ button {
 
 }
 
+/* Media queries */
+
 @media (max-width: 600px){
+    #color-picker {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
     #color-scheme {
         flex-direction: column;
     }
     .color-individual {
-        width: 80%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         }
@@ -92,6 +106,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-shrink: 3;
     }
 
 
@@ -109,6 +124,13 @@ button {
 
     #seed-color {
         margin-bottom: 1rem;
+    }
+    
+    #get-colors {
+        width: 95%;
+        margin: 0 auto 2rem;
+        align-items: flex-start;
+    
     }
     
 
